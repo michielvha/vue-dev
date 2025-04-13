@@ -1,0 +1,23 @@
+{
+    "name": "Vue Dev Container",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "postCreateCommand": "npm install",
+    "forwardPorts": [5173],
+    "mounts": [
+      "source=${localWorkspaceFolder}/src,target=/workspace,type=bind"
+    ],
+    "customizations": {
+      "vscode": {
+        "settings": {
+            "terminal.integrated.shell.linux": "/bin/bash"
+          },
+        "extensions": [
+          "esbenp.prettier-vscode",
+          "dbaeumer.vscode-eslint",
+          "octref.vetur"
+        ]
+      }
+    }
+  }
