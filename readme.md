@@ -16,7 +16,7 @@ git clone https://github.com/your-username/your-repo.git
 cd your-repo
 ```
 
-2. Open in VS Code
+### 2. Open in VS Code
 
 Make sure you have the Dev Containers extension installed in VS Code.
 
